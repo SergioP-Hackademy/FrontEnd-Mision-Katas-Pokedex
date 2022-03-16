@@ -1,0 +1,25 @@
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    /* min-width: 100vh; */
+    /* background-color: #fff !important; */
+    /* background-color: #f1f5ff !important; */
+  }
+  
+  .nav-item {
+    padding: 0 20px;
+  }
+  
+  #brand {
+    margin-left: 6rem !important;
+  }
+  
+  .row {
+    margin: auto !important;
+  }
+  
+  .fondo-footer {
+    background-color: #eef3ff;
+  }
+  body{
+      background-image: url("./NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.webp");
+  }
