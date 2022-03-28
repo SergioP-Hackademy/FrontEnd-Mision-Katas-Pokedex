@@ -1,10 +1,16 @@
 .navbar {
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: "VT323"; */
+    font-family: "Staatliches", cursive;
+    color: black;
     /* min-width: 100vh; */
     /* background-color: #fff !important; */
     /* background-color: #f1f5ff !important; */
   }
-  
+  .cardWhidth{
+    width: 18rem
+  }
+
   .nav-item {
     padding: 0 20px;
   }
@@ -20,6 +26,56 @@
   .fondo-footer {
     background-color: #eef3ff;
   }
-  body{
-      background-image: url("./NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.webp");
+
+body {
+  background: #424242 url(body_bg.png);
+}
+.cuadros div{
+  background: rgb(84,197,251);
+  background: radial-gradient(circle, rgba(84,197,251,1) 0%, rgba(7,168,255,1) 100%); 
+}
+.bodyPokedex{
+background: #F00000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DC281E, #F00000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DC281E, #F00000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.animacionBtn:active{
+  transform: scale(.9);
+}
+.bordePrincipal{
+  border: 7px double #181818;
+}
+.bordePrincipalSimple{
+  border: 3px inset  #474646;
+}
+.shadowtest {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 9px 7px rgba(0,0,0,0.3); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 9px 7px rgba(0,0,0,0.3);
   }
+  
+.fondoPlata{
+    background: linear-gradient(14deg, #d3d1d1 50%, #ffffff 80%, #cac9c9 90%);
+  }
+/* .pantallasInfo{
+  font-family: 'Courier New', Courier, monospace;
+  background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
+} */
+.pantallasInfo{
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: "Staatliches", cursive;
+  /* font-family: "VT323"; */
+  font-size: 16px;
+  color: black;
+  background: linear-gradient(14deg, rgb(165, 205, 83) 60%, rgb(193, 217, 144) 65%);
+}
+.type{
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  background: #56CCF2;  
+  background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2); 
+}
+.evolucionTag{
+  background-color: #f4dc26; border: none #e4c82e"
+}

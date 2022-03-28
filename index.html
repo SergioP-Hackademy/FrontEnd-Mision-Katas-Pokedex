@@ -1,147 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex API</title>
-    <script src="https://kit.fontawesome.com/1ed8b38ee6.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="./assets/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex API</title>
+  <script src="https://kit.fontawesome.com/1ed8b38ee6.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/style.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Squada+One|Staatliches|VT323" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous"
+        />
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-   
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
-<!--     
+  <!--     
     <h1>Pokedex LaunchX</h1>
     <input type="text" name="pokeName" id="pokeName" placeholder="pikachui"><br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/481px-Pokebola-pokeball-png-0.png" alt="" width="150" id="pokeImg"><br>
     <button onclick="fetchPokemon()">Cambiar pokemon</button><br> -->
-     <!-- parte 1 navbar-->
-     <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light">
-        <!-- <div class="col-4">
+  <!-- parte 1 navbar-->
+  <nav class="navbar navbar-expand-lg py-4 navbar-light bg-light">
+    <!-- <div class="col-4">
             <a class="navbar-brand font-weight-bold " id="brand" href="#" style="color:#3656d4;">Vaccination</a>
         </div> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #ef3e33;">
-            <ul class="navbar-nav ml-auto mr-auto">
-                <li class="nav-item"><a class="nav-link text-muted font-weight-bold" href="default.asp">Random Team</a>
-                </li>
-                <li class="nav-item"><a class="nav-link text-muted font-weight-bold" href="news.asp">Random Pokemon</a></li>
-                <li class="nav-item"><a class="nav-link text-muted font-weight-bold" href="contact.asp">Search by Type</a></li>
-                <li class="nav-item"><a class="nav-link text-muted font-weight-bold" href="about.asp">Generations</a>
-                </li>
-                <li class="nav-item bg-primary rounded shadow"><a class="nav-link active text-white font-weight-bold"
-                        href="about.asp">Busqueda</a></li>
-            </ul>
-        </div>
-    </nav>
-
-
-
-    <!-- Carrucel central  -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5BC3/production/_90319432_poke5.png" alt="First slide", height="600">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5BC3/production/_90319432_poke5.png" alt="Second slide" height="600">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5BC3/production/_90319432_poke5.png" alt="Third slide" height="600">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    	<!-- Card de busqueda central -->
-        <div class=" row justify-content-center align-items-center  pt-5 pb-5">
-            <form action="" onsubmit="searchPokemon(event)">
-                <input type="text" name="pokemon" autocomplete="off">
-            </form>
-        </div>
-    <div class=" row justify-content-center align-items-center  pt-5">
-        <div class="card "  style="width: 18rem;" >
-            <img src="assets/NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.webp" class="card-img-top" alt="..." height="150"
-                width="150">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                    content.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item " id="PS">PS</li>
-                <li class="list-group-item " id="Atack">Ataque</li>
-                <li class="list-group-item " id="Defence">Defensa</li>
-                <li class="list-group-item " id="AS">
-                    <div class="row">
-                        <div class="col-md-6">Ataque especial</div> 
-                        <div class="col-md-6"><p class="text-end">500</p></div>
-                    </div>
-                </li>
-                <li class="list-group-item " id="DS">Defensa especial</li>
-                <li class="list-group-item " id="life">Vida</li>
-
-            </ul>
-        </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #dddd;">
+      <ul class="navbar-nav ml-auto mr-auto">
+        <li class="nav-item"><a class="nav-link text-muted font-weight-bold" href="default.asp">Random Team</a>
+        </li>
+        <li class="nav-item"><a class="nav-link  " href="news.asp">Random Pokemon</a></li>
+        <li class="nav-item"><a class="nav-link text-muted font-weight-bold" href="contact.asp">Search by Type</a></li>
+        <li class="nav-item"><a class="nav-link text-muted font-weight-bold" href="about.asp">Generations</a>
+        </li>
+        <li class="nav-item bg-primary rounded shadow"><a class="nav-link active text-white font-weight-bold"
+            href="about.asp">Busqueda</a></li>
+      </ul>
     </div>
-
-<div class="container" style="background-color: azure;">
-
-    <p class="text-start">Start aligned text on all viewport sizes.</p>
-<p class="text-center">Center aligned text on all viewport sizes.</p>
-<p class="text">End aligned text on all viewport sizes.</p>
-
-<p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
-<p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
-<p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
-<p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+  </nav>
 
 
-<div class="top-bar">
-    <div class="container">
-      <div class="col-12 text-end">
-        <p><a href="teL: 0612345678"> Bel ons </a></p>
+
+  <!-- Carrucel central  -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5BC3/production/_90319432_poke5.png"
+          alt="First slide" , height="600">
       </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5BC3/production/_90319432_poke5.png"
+          alt="Second slide" height="600">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5BC3/production/_90319432_poke5.png"
+          alt="Third slide" height="600">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Input busqueda central -->
+  <div class=" row justify-content-center align-items-center  pt-5 pb-5">
+    <form action="" onsubmit="searchPokemon(event)">
+      <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" autocomplete="off">
+    </form>
+  </div>
+
+  <div class="container">
+    <div class=" row  justify-content-between">
+      <input type="text" class="form-control col-4" placeholder="Recipient's username"
+        aria-label="Recipient's username with two button addons">
+      <button class="btn btn-outline-secondary col-4" type="button">Button</button>
+     </div> <div class="row">
+      <button class=" col-auto aligng-item-center btn btn-outline-secondary  " type="button">Button</button>
+    
     </div>
   </div>
-</div>
 
-<footer> <script src="index.js"></script> </footer>
+
+  <!-- Tarjets -->
+  <div class=" row justify-content-center align-items-center  pt-5">
+    <div class="card " style="width: 18rem;">
+      <img src="assets/NXrR_qnMRHrwUoE8pbeiX26fq4mNctFsmdEghRVApSQ.webp" class="card-img-top rounded-3" alt="..."
+        height="150" width="150">
+      <div class="card-body text-center">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+          content.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item " id="PS">PS</li>
+        <li class="list-group-item " id="Atack">Ataque</li>
+        <li class="list-group-item " id="Defence">Defensa</li>
+        <li class="list-group-item " id="AS">
+          <div class="row">
+            <div class="col-md-6">Ataque especial</div>
+            <div class="col-md-6">
+              <p class="text-end">500</p>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item " id="DS">Defensa especial</li>
+        <li class="list-group-item " id="life">Vida</li>
+
+      </ul>
+    </div>
+  </div>
+
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <footer>
+    <script src="index.js"></script>
+  </footer>
 </body>
+
 </html>
