@@ -18,7 +18,7 @@ const fetchPokemonOne = (random) => {
     }).then( async (data) => {
         if (data) {
             console.log(data);
-            resetcard()
+            // resetcard()
             namePokemon(data)
             pokeImage(data);
             const { stats, types, abilities, id, name, weight, height, species} = data ;
